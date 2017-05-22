@@ -13,10 +13,6 @@
     <logger name="org.springframework">
         <level value="WARN"/>
     </logger>
-   
-    <logger name="com.etymgiko">
-        <level value="DEBUG"/>
-    </logger>
 
     <root>
         <level value="WARN"/>

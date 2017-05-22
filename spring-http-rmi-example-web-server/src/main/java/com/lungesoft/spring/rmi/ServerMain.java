@@ -1,7 +1,7 @@
 package com.lungesoft.spring.rmi;
 
-import com.lungesoft.spring.rmi.service.impl.ServiceExampleImpl;
 import com.lungesoft.spring.rmi.service.ServiceExample;
+import com.lungesoft.spring.rmi.service.impl.ServiceExampleImpl;
 import com.sun.net.httpserver.HttpHandler;
 import org.springframework.remoting.httpinvoker.SimpleHttpInvokerServiceExporter;
 import org.springframework.remoting.support.SimpleHttpServerFactoryBean;
@@ -19,9 +19,9 @@ public class ServerMain {
 
         SimpleHttpServerFactoryBean simpleHttpServerFactoryBean = new SimpleHttpServerFactoryBean();
         Map<String, HttpHandler> contexts = new HashMap<>();
-        contexts.put("/spring/example", serviceExporter);
+        contexts.put("/example", serviceExporter);
         simpleHttpServerFactoryBean.setContexts(contexts);
-        simpleHttpServerFactoryBean.setPort(8080);
+        simpleHttpServerFactoryBean.setPort(9080);
         simpleHttpServerFactoryBean.afterPropertiesSet();
     }
 }

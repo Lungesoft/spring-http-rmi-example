@@ -9,7 +9,7 @@ public class ClientMain {
 
     public static void main(String[] args) {
         HttpInvokerProxyFactoryBean factoryBean = new HttpInvokerProxyFactoryBean();
-        factoryBean.setServiceUrl("http://localhost:9080/example");
+        factoryBean.setServiceUrl("http://localhost:8080/spring/example");
         factoryBean.setServiceInterface(ServiceExample.class);
         factoryBean.afterPropertiesSet();
 
