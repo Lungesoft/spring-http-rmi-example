@@ -3,6 +3,7 @@ package com.lungesoft.spring.rmi;
 import com.lungesoft.spring.rmi.service.impl.ServiceExampleImpl;
 import com.lungesoft.spring.rmi.service.ServiceExample;
 import com.sun.net.httpserver.HttpHandler;
+import org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter;
 import org.springframework.remoting.httpinvoker.SimpleHttpInvokerServiceExporter;
 import org.springframework.remoting.support.SimpleHttpServerFactoryBean;
 
