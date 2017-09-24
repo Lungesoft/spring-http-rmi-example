@@ -14,7 +14,7 @@ public class ClientMain {
         factoryBean.afterPropertiesSet();
 
         ServiceExample service = (ServiceExample) factoryBean.getObject();
-        ResponseExample response = service.sayHello(new MessageExample("hello from client"));
+        ResponseExample response = service.sayHello(new MessageExample("Hello from client"));
         System.out.println(response.getText());
     }
 
